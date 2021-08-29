@@ -1,0 +1,28 @@
+<p>form works!</p>
+
+<form style="margin-left: 30px;" [formGroup]="mainForm"
+        novalidate
+        (ngSubmit)="save()" >
+        <div fxLayout="row wrap"  fxLayoutGap="15px grid" >
+            <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="25%"  >
+                <mat-form-field fxFlex="100%"  >
+                  <mat-label >מספר פרויקט</mat-label>
+                  <input matInput type="text"  formControlName="projectId"   >
+                </mat-form-field>
+             </div>
+        
+        
+            <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="25%"  >
+                <mat-form-field fxFlex="100%"  >
+                  <mat-label >שם פרויקט</mat-label>
+                  <input matInput type="text"  formControlName="projectName"   >
+                </mat-form-field>
+             </div>
+        </div>
+
+     
+        <div fxLayout="row wrap"  fxLayoutGap="15px grid">
+            <button mat-raised-button type="submit"  >שמור</button>
+        </div>
+       
+</form>
