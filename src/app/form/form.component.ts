@@ -19,8 +19,8 @@ export class FormComponent implements OnInit {
   ngOnInit(): void {
     this.projectForm= new FormGroup({
       projectId: new FormControl('123',[Validators.required]),
-      projectName: new FormControl('test1458888',[Validators.required])
-      
+      projectName: new FormControl('test1458888',[Validators.required]),
+      projectDesc: new FormControl('learning',[Validators.required])
    });
   }
 
